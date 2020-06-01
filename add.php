@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Bài 1.2</title>
+		<title>Bài 1.3</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet"> 
@@ -29,10 +29,10 @@
 
     </head>
 	<body>
-		<h1 style="text-align: center;">PHP - Thực hành gửi dữ liệu bằng POST</h1>
+		<h1 style="text-align: center;">PHP - SESSION</h1>
 		<hr>
 		<div class="container">
-		 <form action="add_action.php" method="POST" role="form" enctype="multipart/form-data">
+		 <form action="add_process.php" method="GET" role="form" enctype="multipart/form-data">
 
 	    	<div class="form-group">
 	    		<label for="">Mã sinh viên</label>
