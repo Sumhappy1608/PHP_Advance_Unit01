@@ -1,32 +1,28 @@
-<?php
+<?php 
 session_start();
-if(isset($_GET['masv']))
+if(isset($_GET['ID']))
 {
-	$masv = $_GET['masv'];
+	$ID = $_GET['ID'];
 }
-if(isset($_GET['hoten']))
-{
-	$hoten = $_GET['hoten'];
-}
+echo "$ID";
 
-if(isset($_SESSION[$hoten]))
+if(isset($_SESSION[$ID]))
 {
-	unset($_SESSION[$hoten]);
+	unset($_SESSION[$ID]);
 }
-
-if(isset($_SESSION[$hoten]))
+if(isset($_SESSION[$ID]))
 {
 	$check = true;
 }
 if( $check != true)
 {
-	setcookie('msg',"Bạn đã xóa thành công",time() + 2);
-	header('Location: list.php');
+	header('Location: cart.php');
 }
 else
 {
-	setcookie('msg',"Bạn đã xóa thất bại",time() + 2);
-	header('Location: list.php');
+	header('Location: cart.php');
 }
+
+
 
 ?>
